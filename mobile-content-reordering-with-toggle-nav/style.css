@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    background: linear-gradient(90deg,rgba(255, 118, 117,1.0),60%,rgba(0, 206, 201,1.0));
+    margin: 0;
+}
+.wrapper {
+    text-align: center; 
+}
+header,section,footer {
+    padding: 1em;
+    background: rgba(0,0,0,0.2);
+    margin: 1em 0;
+    color: white;
+}
+/* by default the toggle nav is hidden */
+.toggleNav {
+    display: none; 
+}
+ul {
+    /* flex container for nav li items */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+a {
+    color: white;
+    background: rgba(0,0,0,0.2);
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 1em 2em;
+    
+    display: inline-block;
+    width: 100%;
+}
+a:hover {
+    background: rgba(0,0,0,0.4);
+}
+
+.hero img {
+    width: 100%;
+}
+form {
+    /* flex container for form items*/
+    display: flex;
+    flex-direction: column;
+}
+input {
+    text-align: center;
+    padding: 0.3em;
+    color: black;
+    border: 0;
+    margin: 0.2em;
+    font-size: 1em;
+}
+.button {
+    color: white;
+    background: rgba(0,0,0,0.4);
+}
+.button:hover{
+    background: rgba(0,0,0,0.6);
+}
+/* Up until now its mobile layout
+below are the media queries for extending this layout to bigger devices*/
+
+@media (min-width: 600px) {
+    ul {
+      /*flex container for nav items*/
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    li {
+      flex-basis: 50%;
+    }
+    form {
+      padding: 1em;
+      flex-direction: row;
+      justify-content: center;
+    }
+    input {
+      flex-basis: 35%;
+    }
+    .button {
+      flex-basis: 20%;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .wrapper {
+        padding: 1em 5em;
+    }
+    li {
+        flex: 3;  
+    }
+    .social {
+        flex: 2;
+    }
+    form {
+        padding: 2em;
+    }
+  
+}
+
+/* re-ordering page content using flexbox for very small devices*/
+@media (max-width: 500px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+        
+    /* selecting every immediate child of wrapper */
+    .wrapper > * {
+        order: 10; /* changing the default order from 0 to 10*/
+        
+    }
+    .nav-bar {
+        order: 1;
+        margin-top: 1em;
+    }
+    .heading {
+        order: 2;
+    }
+    .details {
+        order: 3;
+    }
+    /* making the toggle nav visisble for small devices*/
+    .toggleNav {
+        display: block;
+    }
+    .nav-bar ul {
+        display: none;
+    }
+    /* clicking triggers the open class*/
+    .nav-bar ul.open {
+        display: flex;
+    }
+    
+}
+  

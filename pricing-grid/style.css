@@ -84,3 +84,25 @@ body {
     }
 
 }
+
+/*  ANOTHER APPROACH
+.pricing-grid {
+  display: flex;
+  align-items: center;
+}
+.plan {
+  flex: 1; /* making all equally wide insted for flex using flex basis here
+  display: flex;
+  flex-wrap: wrap; /*using flex-wrap instead of changing the flex-direction to column 
+  justify-content: center;
+}
+.plan > * {
+  flex-basis: 100%;
+}
+.plan > *:last-child {
+  flex-basis: 40%;
+}
+.cta {
+  align-self: flex-end;
+}
+*/

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,600');
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  
+}
+/*  HEADER  */
+
+header {
+  height: 100vh;
+  color: white;
+  background-image: url(https://images.unsplash.com/photo-1532958808832-aae08f887875?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background-size: cover;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+header h1 {
+  font-size: 5rem;
+  background-color: rgba(0,0,0,0.5);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+header p {
+  margin-top: 0;
+  background: rgba(0,0,0,0.5);
+  padding: 0.3rem;
+}
+/*  SECTION   */
+.projects {
+  padding: 10vh 0;
+  text-align: center;
+  
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  
+}
+.project {
+  background: rgba(0,0,0,0.1);
+  flex-basis: 30%;
+}
+
+@media (min-width: 700px) {
+  .projects {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1100px) {
+  
+  .project {
+    min-height: 40vh;
+    padding-top: 10vh;
+  }
+}
+
+/*  FOOTER   */
+footer {
+  background-image: url(https://images.unsplash.com/photo-1532958808832-aae08f887875?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  color: white;
+  padding: 1em;
+  
+  display: flex;
+  justify-content: flex-end;
+}
+footer div {
+  background: rgba(0,0,0,0.5);
+  flex-basis: 100%;
+  padding: 1rem;
+  
+}
+.btn {
+  background: white;
+  text-decoration: none;
+  padding: 0.3rem 0.5rem;
+  color: black;
+  font-weight: 800;
+}
+
+@media (min-width: 700px) {
+  footer div {
+    flex-basis: 50%;
+  }
+}

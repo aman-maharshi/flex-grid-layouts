@@ -1,6 +1,7 @@
 # Flexbox based Layouts
 
-*following are the links to each project hosted with github pages*
+>Below are the links to all the Projects, hosted with GitHub Pages
+
 1. [Flexbox Navbar](https://aman-maharshi.github.io/flexbox-io/flexbox-nav/)
 2. [Pricing Grid](https://aman-maharshi.github.io/flexbox-io/pricing-grid/)
 3. [Inline Form](https://aman-maharshi.github.io/flexbox-io/inline-form/)

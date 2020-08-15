@@ -1,4 +1,4 @@
-# Flexbox based Layouts
+# CSS Flexbox and Grid based layouts
 
 >Below are the links to all the Projects, hosted with GitHub Pages
 
